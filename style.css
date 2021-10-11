@@ -1,0 +1,398 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  height: 100%;
+}
+
+body {
+  font-family: Barlow-Medium, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color:#2A4A5C;
+}
+
+.registration {
+  width: 100%;
+  height: 100%;
+
+  background: #EFF6FF;
+}
+
+.registration__container {
+  margin: auto;
+  padding: 10rem 0;
+  max-width: 1436px; 
+}
+
+.registration__body {
+  display: flex;
+  justify-content: center;
+}
+
+.registration__image {
+  position: relative;
+
+  height: auto;
+}
+
+.registration__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  position: absolute;
+  top: 44px;
+  left: 53px;
+
+  width: 128px;
+  height: 27px;
+}
+
+.registr-form {
+  height: 100%;
+
+  background: #ffffff;
+}
+
+.registr-form__wrapper {
+  padding: 11.9rem 11.7rem 11.9rem 7.1rem;
+}
+
+.registration__header h2 {
+  font-weight: 400;
+  font-size: 27px;
+}
+
+.registration__text {
+  margin-top: 20px; 
+
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.social-divider {
+  position: relative;
+
+  margin-top: 50px;
+  
+  text-align: center;
+}
+
+.social-divider::before {
+  right: calc(50% + (50px / 2));
+  width: 100%;
+}
+
+.social-divider::after {
+  left: calc(50% + (50px / 2));
+  width: 100%;
+}
+
+.social-divider::after,
+.social-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  
+  max-width: calc(50% - (50px / 2));
+  
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-top: 55px;
+}
+
+.social__button {
+  padding: 15px;
+  margin-right: 20px;
+  height: 40px;
+  width: 229px;
+
+  text-align: center; 
+  text-decoration: none;
+}
+
+.social__button:last-child {
+  margin-right: 0;
+}
+
+.social__button_facebook:hover {
+  background: rgba(37, 91, 155, 0.8);
+}
+
+.social__button_facebook {
+  position: relative;
+
+  background: #255B9B;
+}
+
+.social__button_linkedin {
+  position: relative;
+
+  background: #0076B6;
+}
+
+.social__button_linkedin:hover {
+  background: rgb(0, 118, 182, 0.8);
+}
+
+.social__icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+
+  width: 20px;
+  height: 20px;
+  
+  transform: translate(0, -50%);
+}
+
+.social__link {
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+.registr {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 50px;
+}
+
+.registr__item {
+  padding: 14px 14px;
+  width: 229px;
+  height: 70px;
+  margin-right: 20px;
+
+  border: 1px solid #EFEFEF;
+  border-radius: 2px;
+}
+
+.registr__item:last-child {
+  margin-right: 0;
+}
+
+.registr__item:hover {
+  border-left: 1px solid #3597FC;
+}
+
+.registr__input {
+  margin-top: 5px;
+
+  font-family: Barlow-Medium, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #313131; 
+
+  border: none;
+  outline: none;
+}
+
+.registr__label {
+  display: block;
+
+  font-size: 14px;
+  color: #919FAA;
+}
+
+.investor {
+ margin-top: 69px;
+}
+
+.investor__title {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.investor__text {
+  margin-top: 20px;
+
+  font-size: 12px;
+}
+
+.investor__type {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+}
+
+.investor__type label {
+  margin-left: 10px;
+
+  font-size: 14px;
+}
+
+.investor__hint {
+  position: absolute;
+
+  margin-top: 18px;
+  padding: 8px;
+  width: 207px;
+  
+  color: #A5A5A5;
+  font-size: 11px;
+  opacity: 0;
+  
+  border-radius: 3px;
+  box-shadow: 0 0 13px #f3f3f3;
+}
+
+.investor__type label:hover + .investor__hint {
+  opacity: 1;
+}
+
+.investor__type input {
+  vertical-align: middle;
+}
+
+.btn {
+  padding: 7px;
+  width: 200px;
+  height: 42px;
+
+  font-family: Barlow-Medium, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+
+  background: #3698FB;
+  border: none;
+  border-radius: 3px;
+
+  cursor: pointer;
+}
+
+.agree {
+  margin: 100px 0 80px;
+}
+
+.agree span {
+  margin-left: 13px;
+
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.investor__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  width: 100%
+}
+
+.investor__col {
+  position: relative;
+
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  width: 100%;
+  min-height: 1px;
+}
+
+@media screen and (max-width: 900px) {
+  .registration__image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .registration__container {
+    padding: 0;
+  }
+
+  .registr-form__wrapper {
+    padding: 4.9rem 3.7rem 6.9rem 4.1rem;
+  }
+
+  .registration__header h2 {
+    font-size: 24px;
+  }
+
+  .registration__text {
+    font-size: 18px;
+  }
+
+  .social {
+    margin-top: 31px;
+  }
+
+  .social__button {
+    width: 215px;
+  }
+
+  .social-divider {
+    margin-top: 35px;
+  }
+
+  .registr__item {
+    width: 215px;
+    height: 58px;
+    padding: 10px 11px;
+  }
+
+  .investor {
+    margin-top: 44px;
+  }
+
+  .investor__title {
+    font-size: 18px;
+  }
+
+  .investor__hint {
+    right: -10px;
+  }
+
+  .investor__col {
+    width: 50%;
+    margin-bottom: 12px;
+    flex-basis: 50%;
+  }
+
+  .agree {
+    margin-top: 80px;
+  }
+
+  .btn_create {
+    margin-top: 58px;
+  }
+
+  .btn {
+    width: 180px;
+    height: 39px;
+
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 516px) {
+  .social, .registr {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social__button, .registr__item {
+    margin-bottom: 20px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .social__button:last-child {
+    margin-bottom: 0;
+  }
+}
